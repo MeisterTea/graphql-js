@@ -1,5 +1,7 @@
 const jwt = require('jsonwebtoken')
-const APP_SECRET = 'GraphQL-is-aw3some'
+const dotenv = require('dotenv')
+dotenv.config()
+const APP_SECRET = process.env.APP_SECRET
 
 function getUserId(context) {
   const Authorization = context.request.get('Authorization')

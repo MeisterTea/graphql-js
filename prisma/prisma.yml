@@ -1,5 +1,5 @@
 # The HTTP endpoint for your Prisma API
-endpoint: ''
+endpoint: ${env:PRISMA_ENDPOINT}
 
 # Points to the file that contains your datamodel
 datamodel: datamodel.prisma
